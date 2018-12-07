@@ -1,0 +1,247 @@
+/* Style sheets utilize selectors--either elements, class or 
+id--to assign various properties a specific value.  This 
+creates uniformity, standardization and consistency throughout 
+the entire web appliction. */
+
+/* Element selector utilizes the element name (p, a, div, span, etc) */
+
+/* Class selector has  a period (.) + variable name (.myDiv, phoneNumber, etc) */
+
+/* ID selector utilizes hash (#) +variable name (#myDiv, #phoneNumber) */
+
+/* As a general rule if you only have one item on a page, use an ID (#)*/
+
+/* If there are multiple things on a page, use a class (.) instead */
+
+body {
+    background-color: #2ddcd3;
+}
+h1 {
+    background-color: yellow;
+    font-size: 36px;
+    color: #310202;
+    box-align: left;
+    padding-left: 3px;
+}
+h2 {
+    background-color: green;
+    font-size: 33px;
+    color: #ffffff;
+}
+
+h3 {
+    /* background-color: red; */
+    color: #0d3a38;
+    font-size: 30px;
+    outline-color: #310202;
+}
+
+p {
+    /* float:left; */
+    font-weight: inherit;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    float: left;
+    margin: 0 1.5%;
+    width: 60%;
+}
+
+aside {
+    float: left;
+    margin: 0 1.5%;
+    width: 30%;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {  
+    position: fixed;
+    left: 0;
+    bottom: 0; 
+    width: 100%;
+    background-color: #ad0101;
+    color: #ffffff;
+    text-align: center; 
+    padding: 6px;
+  }
+  
+.container {  
+    width: 1024px;
+    margin: 30; 
+    width: 100%; 
+    box-align: left; 
+    background-color: #ebe4e4fd; 
+  }
+
+.top > * {
+    vertical-align: top;
+  }
+
+.center {
+    /* margin: auto; */
+    /* width: 80%; */
+    /* border: 3px solid #ebe4e4fd; */
+    /* padding: 30px; */
+    position: absolute;
+    right: 20%;
+    width: 60%;
+    /* right: 300px;
+    width: 300px; */
+    /* border: 3px solid #73AD21; */
+    padding: 15px
+}
+#logo-head,
+#contact-info,
+#portfolio-info,
+#aboutme-bio,
+#aboutme-image {
+    float: left;
+    width: 150px;
+    margin: 0;
+    align: left;
+    padding-right: 5px;
+    /* margin-top: 13px; */
+  }
+
+#aboutme-bio {
+    float: left;
+    align: center;
+    margin: 0;
+    width: 100%;
+    padding-left: 15px;
+    color: #012401;
+    background-color: #ffffff;
+}
+
+#contact-info {
+    float: left;
+    align: center;
+    margin: 0;
+    width: 100%;
+    padding-left: 15px;
+    color: #012401;
+    background-color: #ffffff;
+    list-style: none;
+}
+
+#portfolio-info {
+    float: left;
+    align: center;
+    margin: 0;
+    width: 100%;
+    padding-left: 15px;
+    color: #012401;
+    background-color: #ffffff;
+    list-style: none;
+}
+
+#logo-head {
+    margin: 30;
+    width: 165px;
+    background-color: #4aaaa5;
+    font-size: 21px;
+    color: #ffffff;
+    box-align: left;
+    line-height: 25px;
+    padding: 12px;
+    }
+ 
+/* CSS Navigation Tool bar */
+/* Style the header with a grey background and some padding */
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    }
+  
+/* Style the header links */
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
+    }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    }
+
+/* Style the active/current link*/
+.header a.active {
+    /* background-color: green; */
+    color: silver;
+    }
+/* Change the background color on mouse-over */
+/* Change the background color on mouse-over */
+.header a:hover {
+    background-color: #20b2aa;
+    color: black;
+  }
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+    }
+  /* BONUS: Incorporate CSS animations in your portfolio.
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #20b2aa;
+    -webkit-animation-name: example; Safari 4.0 - 8.0 
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 
+    animation-name: example;
+    animation-duration: 4s;
+    }
+  
+  /* Safari 4.0 - 8.0 
+  @-webkit-keyframes example {
+    from {background-color: #20b2aa;}
+    to {background-color: #ffff00;}
+  }
+  
+  /* Standard syntax 
+  @keyframes example {
+    from {background-color: #20b2aa;}
+    to {background-color: #ffff00;}
+  } */
+  
+  /* Add media queries for responsiveness - when the 
+  screen is 500px wide or less, stack the links on top 
+  of each other */ 
+    @media screen and (max-width: 980px) {
+    .header a {
+        float: none;
+    }        
+    .header-right {
+        float: none;
+        }
+    }
+    @media screen and (max-width: 768px) {
+    .header a {
+        float: none;
+    }
+    .header-right {
+        float: none;
+        }
+    }
+    @media screen and (max-width: 640px) {
+    .header a {
+        float: none;
+        }
+    }
+  
